@@ -1,7 +1,7 @@
 ############ PROVIDER BLOCK ############
 provider "aws" {
 region = "ap-south-1"
-profile = "default"
+profile = "atlantis"
 }
 
 ############ SAVING TF STATE FILE #########
@@ -10,7 +10,7 @@ backend "s3" {
 bucket = "s3-bucket-atlantis-demo-1"
 key = "atlantis/terraform.tfstate"
 region = "ap-south-1"
-profile = "default"
+profile = "atlantis"
 }
 }
 
